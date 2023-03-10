@@ -8,14 +8,14 @@ function esPositivo(num) {
    // Si el número es negativo ---> "Es negativo".
    // Si el número es 0, devuelve false.
    // Tu código:
-   if(num=>1){
-      return esPositivo('Es positivo');
+   if(num>0){
+      return 'Es positivo';
    }
-   else if(num<=1){
-      return esPositivo('Es negativo');
+   else if(num<0){
+      return 'Es negativo';
    }
-   else(num===0);{
-      return esPositivo=false;
+   else{
+      return false;
    }
 }
 
@@ -76,14 +76,14 @@ function esVocal(letra) {
    // Si el usuario ingresa un string de más de un caracter debes retornar el mensaje: "Dato incorrecto".
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código:
-   if (letra == 'a'||letra =='e'||letra =='i'||letra =='o'||letra =='u'){
+   if (letra === 'a'||letra ==='e'||letra ==='i'||letra ==='o'||letra ==='u'){
       return('Es vocal');
    }
-   else if(letra.lenght!=1){
-      return('Dato Incorreto');
+   else if(letra.length>1){
+      return('Dato incorrecto');
    }
    else (letra !== 'a'|| letra !=='e'|| letra !=='i'|| letra !=='o'|| letra !=='u');{
-      return('Dato Incorreto');
+      return('Dato incorrecto');
    }
 }
 
